@@ -1,0 +1,278 @@
+/*----------Basic setup------------*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    background-color: white;
+    color: rgb(63, 62, 62);
+    font-family:'Lato','Arial','sans-serif';
+    font-weight: 300;
+    font: size 20px; 
+    text-rendering:optimizeLegibility;
+}
+.row{
+    max-width: 1040px;
+    margin: 0 auto;
+}
+section {
+    padding: 8px 0;
+}
+
+
+/*----------Header------------*/
+
+header{
+    background-image: linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0,0.7)),url(img/hero.jpg);
+    background-position:center;
+    background-size: cover;
+    height: 100vh;
+}
+    .hero-text-box{
+        position:absolute ;
+        width : 1040px;
+        top : 50%;
+        left : 50%;
+        transform: translate(-50%, -50%);
+    }
+
+h1 {
+    margin: 0;
+    color:#fff;
+    margin-bottom: 20px;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing:1px ;
+    word-spacing: 3px;
+}
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+h2::after{
+    display:block;
+    height:2px;
+    background-color: orange;
+    content:"";
+    width: 100 px;
+    margin:0 auto;
+    margin-top: 30px;
+
+}
+/*----------paragraph-----------*/
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+
+}
+
+/*----------icon------------*/
+.icon-big{
+    font-size: 350%;
+    display:block;
+    color:#ca5f06;
+    margin: 10px;
+}
+/*----------Button------------*/
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    transition: background color 0.2s,border 0.2s,color 0.2s;
+}
+/*----------Button 1------------*/
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: E67E22;
+    border:1px solid:#e67e22;
+    color:#fff;
+    margin: right 15px;
+}
+/*----------Button2------------*/
+.btn-ghost:link,
+.btn-ghost:visited{
+    border:1px solid blue ;
+    color:white;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #ca5f06;
+}
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #ca5f06 ;
+    color:#fff;
+
+}
+.logo{
+    height: 150px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+    
+
+}
+.main-nav li{
+    display:inline-block;
+    margin-left: 40px;
+    
+    
+    
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0px;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e67e22;
+}
+/*----------FEATURES------------*/
+.section-features.long-copy{
+    margin-bottom: 30px;
+}
+
+
+/*----------FEATURES------------*/
+/*----------MEALs------------*/
+
+.section-meals{
+    padding: 0;
+}
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+.meals-showcase li{                /*----------Mot 100% hoilo gota page ta tai 25% dici 4 ta chobi page ta cover korbe------------*/
+    display:block;
+    float: left;
+    width:25%;
+}
+.meals-photo{
+    width:100%;
+    margin:0;
+    overflow: hidden;
+}
+.meal-photo img{
+    opacity: 0.7;                   /*----------Darker hobe chobi gula bluer------------*/
+    width:100%;
+    height:auto;
+    transform: scale(1.15);
+    transition: transform 0.5s,opacity 0.5s;      /*----------0.5 sec dhore chobi ta dhore rakhbe------------*/
+}
+.meal-photo img:hover{               /*----------img tar upore mouse niye gele sundor akta hover hbe------------*/
+    transform: scale(1.03);
+}
+
+/*----------FEATURES------------*/
+/* How it works*/
+/*----------FEATURES------------*/
+.section-steps{
+    margin-bottom: 50px;
+    margin-top: 2cm;
+}
+.section-steps{
+    margin-top: 2cm;             /*---------2 bar dici but top a space hocce na----------*/
+}
+.steps-box{
+    margin-top: 30px;
+}
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+}
+.steps-box:last-child{
+    padding-left: 3%;
+}
+.app-screen{
+    width: 40%;
+}
+.works-step{
+    margin-bottom: 50px;
+}
+
+.works-step:last-of-type{
+    margin-bottom: 80px;
+}
+.works-step div{
+    color:#e67e22;
+    border:2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float:left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app img{
+    height: 50px;
+    width:auto;
+    margin-right: 20px;
+}
+.btn-app:link,
+.btn-app:visited{
+    border: 0;
+}
+
+
+.city-feature img:hover{
+    transform: scale(1.03);    /*---kaj kortesenh------*/
+}
+
+.box img{
+    width:100%;
+    height:auto;                /*---amr akane aita auto meticcay hoye gese----*/
+    margin-bottom: 15%;
+}
+
+.city feature{
+    margin-bottom: 5px;
+}
+
+.plan-box{
+    background-color:#fff;                   /**kaj kore nah**/
+    font-size: 200%;
+}
+.plan-prize{
+    font-size: 300%;                            /**kaj kore nah  auto akta niye nise **/
+}
+
+
+
+/*---
+.section-testimonials{
+    margin-top: 5cm;                 /*kaj kore nah*/
+
+/*---
